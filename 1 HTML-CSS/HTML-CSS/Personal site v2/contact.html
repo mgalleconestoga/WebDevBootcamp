@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" alt="Michael">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <p><a href="mailto:michael@galle.style">michael@galle.style</a><p>
+    <p>My fictional address</p>
+    <p>Tel: 555-1234</p>
+
+    <form action="mailto:michael@galle.style" method="post" enctype="text/plain">
+        <fieldset>
+            <legend><h2>Send me a message</h2></legend>
+
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" value="">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="name" value="">
+            </div>
+            <div>
+                <label for="color">Favorite color: </label>
+                <input id="color" type="color" name="color" value="">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="password" value="">
+            </div>
+            <div>
+                <label for="birthday">Birthday: </label>
+                <input id="birthday" type="date" name="bday" value="">
+            </div>
+            <div>
+                <label for="number">Favorite number</label>
+                <input type="range" min=0 max=100 name="number">
+            </div>
+            <label for="message">Your Message</label><br>
+            <textarea name="mesg" id="message" cols="50" rows="10"></textarea><br>
+
+            <label>Do you agree to the terms?</label>
+            <label><input type="radio" name="terms" value="yes">Yes</label>
+            <label><input type="radio" name="terms" value="no">No</label>
+    
+            <div>
+                <br>
+                <input type="submit">
+            </div>
+        </fieldset>        
+    </form>
+</body>
+</html>

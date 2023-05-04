@@ -1,0 +1,40 @@
+/******************************TAG SELECTORS*****************************/
+body {
+    background-color: #EFF5F5;
+}
+
+img {
+    border-radius: 25px;
+}
+
+img:hover {
+    border-radius: 30px;
+}
+
+hr {
+    border-style: none;
+    border-top: 4px dotted #D6E4E5; 
+    border-width: 5px;
+    height: 2px;
+    width: 5%;
+    /*background-color: #ffffff83; */
+}
+
+h1 {
+    color: #497174;
+    font-size: 2rem;
+}
+
+h2, h3 {
+    color: #EB6440;
+}
+
+/******************************CLASS SELECTORS*****************************/
+h3.ed {
+    color: green;
+}
+
+/******************************ID SELECTORS*****************************/
+h3#work {
+    color: red;
+}

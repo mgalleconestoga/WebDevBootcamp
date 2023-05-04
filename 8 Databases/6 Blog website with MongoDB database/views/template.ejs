@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs'); -%>
+
+<% // OLD: Static Data from array %>
+<% for(var i=0; i < posts.length; i++) { %>                      <!-- Alternatively could use forEach() -->
+    <h1><%=posts[i].title %></h1>
+    
+    <% if(i == 0) { %>
+        <p><%=posts[i].content %>                                <!-- Show full description content-->
+    <% } else { %>
+        <p><%=posts[i].content.substring(0, 144) + "..." %>      <!-- Show only the first 144 characters of each post. could also use slice() -->
+        <!-- <a href="/posts/<%=posts[i].title%>">Read more</a></p> -->  <!-- Show link to expanded post --> 
+    <% } %>
+<% } %>
+
+<% // NEW: Blog entries, data from the database comes in the entries array of documents (JSON objects) %>
+<% entries.forEach(function(entry) { %>
+    <h1><%=entry.title%></h1>
+    <p><%=entry.content.substring(0, 144) + "..." %>
+    <a href="/posts/<%=entry.title%>">Read more</a></p>         <!-- Show link to expanded post --> 
+<% }); %>
+
+<%- include('partials/footer.ejs'); -%>

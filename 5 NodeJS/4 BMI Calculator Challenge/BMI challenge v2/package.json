@@ -1,0 +1,15 @@
+{
+  "name": "3-bmi-challenge",
+  "version": "1.0.0",
+  "description": "Computes the BMI based on given height and weight",
+  "main": "bmi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Galle",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}

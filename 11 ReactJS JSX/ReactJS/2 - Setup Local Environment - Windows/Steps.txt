@@ -1,0 +1,20 @@
+1. Install or make sure Node is up to date
+    - nodejs.org and download/find latest stable version (the reboot)
+    - > node --version   (compare both)
+2. Install or update VSCode
+    - code.visualstudio.com
+    - Install extension 'Babel JavaScript' (Michael McDermott) - code highlighting
+    - Install extension 'vscode-icons' - shows icons nicely beside files 
+3. Create React App
+    - Follow instructions on React website: https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
+    - > npx create-react-app <your-apps-name>         (npx is a package runner tool that comes with npm)
+
+4. Run App / Deploy   
+    - > cd my-app
+    - > npm start          (starts the development server)    
+
+    - Delete all the extra files and text that are not needed
+
+    When ready to build and deploy 
+    - > npm run build      (creates a optimized build of the app in the 'build' folder)
+ 

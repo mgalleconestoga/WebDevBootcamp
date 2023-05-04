@@ -1,0 +1,17 @@
+{
+  "name": "section-19---calculator-challenge",
+  "version": "1.0.0",
+  "description": "calculator challenge",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Michael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

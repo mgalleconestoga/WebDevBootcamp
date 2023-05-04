@@ -1,0 +1,6 @@
+npm init
+npm install express
+npm install ejs
+start code .
+nodemon app.js
+

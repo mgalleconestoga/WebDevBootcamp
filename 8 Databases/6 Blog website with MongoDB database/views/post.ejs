@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') -%>
+
+    <h1><%=entry.title%></h1>
+    <p><%=entry.content%></p>            <!-- Full post text -->
+    
+    <!-- If user wants to delete the post clicks on delete and this posts to the post route for the specific post -->
+    <form action="/posts/<%=entry.title%>" method="post">
+        <p><button name="deleteItemID" value="<%=entry._id%>" onChange="this.form.submit()"> Delete post</button></p>
+    </form>
+    
+    <p><a href="/">Back</a></p>         <!-- Show link to expanded post --> 
+
+<%- include('partials/footer.ejs') -%>

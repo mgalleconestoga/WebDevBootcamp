@@ -1,0 +1,75 @@
+/**************** TAG SELECTORS ********************/
+body { 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;                      /* Embedded Google font */
+}
+
+h3 { font-weight: 600; font-size: 1.5rem;  }
+
+/**************** CLASS SELECTORS ********************/
+
+/* colors */ 
+.big-heading, .navbar-brand, .navbar-toggler, .nav-link, .testimonial-text, .carousel-item em { color: white; } 
+.feature-icon, .social { color: #ababbd; }
+.feature-icon:hover { color:#e3e3ec }
+.navbar-toggler { background-color: white; }
+.container-fluid { background-color: #ababbd; }
+.price { background-color: white;}
+
+/* fonts */
+.navbar-brand { font-family: 'Ubuntu', sans-serif; }                /* Embedded Google font */
+.navbar-brand, .testimonial-text { font-size: 2rem; }
+.nav-link { font-size: 1.1rem; }
+
+/* Spacing, padding, margin */
+.nav-item { padding: 0 18px; }
+.big-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.container-fluid { padding: 15px 15%; }
+.download { margin: 10px 15px; min-width: 170px; }
+.pad-me {   margin: 50px 0px; }
+.feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+.carousel-item { padding: 0% 15%; }
+.big-heading, .testimonial-text, .card-text { line-height: 1.5;}
+.testimonial-text { font-weight: 600; padding-bottom: 20px; }
+.testimonial-image { width: 100px; border-radius: 25%; }
+.press-logo { width: 120px; margin: 20px 20px 50px 20px; }
+.social { padding: 20px 10px; }
+
+/**************** ID SELECTORS ********************/
+
+/* position relative/absolute/fixed required for z-index to have an effect. position static (default) does not work*/
+#iphone, #features, #testimonials, #press, #pricing, #cta, #footer { position: relative; } 
+
+/* iphone image to be behind the other sections */
+#iphone { z-index: 0; }
+#features, #testimonials, #press, #pricing, #cta, #footer { z-index: 1; }
+#title-section { margin-bottom: -200px; }           /* This is how we cut off the bottom of the iphone picture*/
+#features { background-color: white;  }           /* Must be set to white otherwise it will be transparent and you will see the iPhone even though it has a higher z-index */
+
+/* Spacing, dimensions and padding */
+#features, #press, #pricing, #cta, #footer { padding: 3% 15% 3% 15%; }
+#features, #press, #pricing, #cta, #footer, #testimonials { line-height: 2; }
+#iphone {
+    width: 80%;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+#testimonials, #press, #pricing { padding: 50px 0px; }
+
+/* Colors */
+#testimonials, #press, #cta, #footer { background-color: #ababbd;  color: white; }
+#footer { background-color: #e4e4ea; color:#ababbd }
+
+
+/**************** MEDIA QUERIES ********************/
+@media (min-width: 992px) { #iphone { rotate: 15deg; }  .big-heading { text-align: left; } }
+@media (min-width:1px) and (max-width:1113px) { .big-heading { font-size: 2.5rem; } }
+
+
+
+

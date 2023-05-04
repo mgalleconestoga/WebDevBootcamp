@@ -1,0 +1,18 @@
+{
+  "name": "section-19---nodejs-with-express",
+  "version": "1.0.0",
+  "description": "Example server using ExpressJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webserver",
+    "express"
+  ],
+  "author": "Michael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

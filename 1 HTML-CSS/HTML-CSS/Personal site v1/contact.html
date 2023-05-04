@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <ul>
+        <li>Email: michael.galle@gmail.com</li>
+        <li>etc</li>
+    </ul>
+    
+    <form action="mailto:michael.galle@gmail.com" method="post" enctype="text/plain">
+        <label>Your name</label>
+        <input type="text" name="name" required><br>
+        <label>Your email</label>
+        <input type="email" name="email" required><br>
+        <label>Your website</label>
+        <input type="url" name="url"><br>
+        <label>Password</label>
+        <input type="password" name="password"><br>
+        <label>Favorite color</label>
+        <input type="color" name="color"><br>
+        <label>Send a file?</label>
+        <input type="file" name="file"><br>
+        <label>Pick a number</label>
+        <input type="range" name="number"><br>
+        <label>Birthday</label>
+        <input type="date" name="date"><br>
+        <label>Sign me up for the email list</label>
+        <input type="checkbox" name="mailing list"><br>
+        <label>Your message</label><br>
+        <textarea name="message" rows="10" cols="80" required></textarea><br>
+        <input type="submit" name="">
+
+    </form>
+</body>
+</html>

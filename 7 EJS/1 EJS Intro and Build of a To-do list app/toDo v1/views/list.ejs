@@ -1,0 +1,28 @@
+<!-- copy paste of code from header.ejs - can be applied to ALL pages accross a website -->
+<%- include('header.ejs') -%>
+
+    <!-- Can run basic JavaScript (intended for control flow only - inside the EJS file as shown below ) -->
+    <div class="box" id="heading">
+        <h1><%=listTitle %></h1>                                                <!-- Note the marker used to pass values in uses an '=' sign-->
+        <% if (kindOfDay === "Saturday" || kindOfDay === "Sunday") { %>         <!-- Sample Embedded JavaScript (EJS) - must be line by line -->                              
+            <h3 style="color: rgb(179, 158, 158)"><%=fullDate %></h3>         <!-- Note the marker used to pass values in uses an '=' sign-->
+        <% } else { %>
+            <h3 style="color: rgb(255, 255, 255)"><%=fullDate %></h3>         <!-- color should be blue on a weekday -->
+        <% } %> 
+    </div>
+    <div class="box">
+            <% if(newItems.length > 0) { %>
+                <% for(var i = 0; i < newItems.length; i++) { %>
+                    <div class="item">
+                        <label><input type="checkbox" hidden><p><%=newItems[i] %></p></label>
+                    </div>
+                <% } %>
+            <% } %>
+            <form action=<%=route %> method="post">                             <!-- Post to the current page so that the data is added to the correct array -->
+                <input type="text" name="newItem" placeholder="New item" autofocus>
+                <button type="submit" name="route" value=<%=route %>>+</button> <!-- route is sent with the form data here for debugging. The target of the action= gives the correct app.post() call which sends the data to the correct array -->
+            </form>
+    </div>
+
+<!-- copy paste of code from footer.ejs - can be applied to ALL pages accross a website -->
+<%- include('footer.ejs') -%>

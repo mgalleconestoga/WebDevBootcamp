@@ -1,0 +1,164 @@
+/********** Imported Google Fonts ************************/
+/* 
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+*/
+
+/********** Defaults / all parts of site ***********/
+body {
+    margin:0; 
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+
+/********** Element selectors ********/
+h1 { 
+    color: #6f7485;
+    font-family: 'Sacramento', cursive;  
+    margin: 0 auto;
+    font-size: 5.62rem;    
+    line-height: 1.5;                  
+}
+
+h2 {
+    color: #C0A080;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem; 
+    margin-top: 50px; 
+    font-weight: normal;
+}
+
+h3 {
+    color: #C0A080;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem; 
+    margin-top: 0; 
+    font-weight: normal;
+}
+
+p.intro {
+    margin-bottom: 30px;
+}
+
+a.footer-link {
+    color: #6f7485;
+    text-decoration: none;
+    font-weight:700; 
+    margin: 30px 40px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 7%;
+    border-width: 0 0 0 0;
+    border-bottom: dotted #C0A080 10px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/********** Class selectors **********/ 
+.top {
+    background-color: #EFEFEF ;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.middle {
+    background-color: #ffffff ;
+    padding-top: 50px;
+}
+
+.bottom {
+    background-color: #D1D1D1 ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+ 
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;                     /* relative to div container side chosen*/
+    right: 35%;
+    top: 100px; 
+}
+
+.bottom-cloud {
+    position: absolute;                     /* relative to div container side chosen*/
+    left: 35%;
+    top: 335px;
+}
+
+.programmer {
+    width: 300px;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.skill-row {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: left;
+    line-height: 2;
+}
+
+.first-skill-row {
+    margin-top: 30px;
+}
+
+.skill-image-odd {
+    width: 25%;
+    float: left;
+    margin-right: 100px;
+}
+
+.skill-image-even {
+    width: 25%;
+    float: right;
+    margin-left: 100px;
+}
+
+.in-touch-text {
+    padding-bottom: 30px; 
+}
+
+.contact-me {
+    margin-bottom: 50px; 
+}
+
+.copyright {
+    color: white; 
+    margin-top: 50px; 
+
+}
+
+.btn {
+    background: #d1d1d1;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 40px; 
+  }
+  
+  .btn:hover {
+    background: #7882A4;
+    text-decoration: none;
+  }

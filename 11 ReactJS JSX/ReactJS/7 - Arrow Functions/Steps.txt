@@ -1,0 +1,10 @@
+1. Download starting files from: https://codesandbox.io/s/es6-arrow-functions-y8jhk?fontsize=14   (download to zip)
+2. Extract files 
+3. Open folder with package.json in VSCode
+4. This is an older project so to install the modules run
+	- > npm install -g npm-check-updates		(check for updates in the identified modules for updates to dependencies)
+	- > ncu install						(update package.json dependencies)
+  Then ...
+	- > npm install  						(this installs the React module)
+	- > npm audit fix						(optional - see terminal for details after running npm install)	
+5. > npm start    						(starts the server at localhost:3000) 

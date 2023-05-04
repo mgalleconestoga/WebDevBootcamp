@@ -1,0 +1,27 @@
+<!-- copy paste of code from header.ejs - can be applied to ALL pages accross a website -->
+<%- include('header.ejs') -%>
+
+    <!-- Can run basic JavaScript (intended for control flow only - inside the EJS file as shown below ) -->
+    <div class="box" id="heading">
+        <h1><%=listTitle %></h1>                                                <!-- Note the marker used to pass values in uses an '=' sign-->
+    </div>
+    <div class="box">   
+            <!-- items array (content of database) is passed to EJS front end (this page) from app.js in the app.get() function -->         
+            <% items.forEach(function(item){ %>
+                <form action=<%=route %> method="post">
+                    <label>
+                        <div class="item">  <!-- Delete items based on the deleteItemID = _id of the item in the database -->
+                            <input type="checkbox" name="deleteItemID" value="<%=item._id%>" onChange="this.form.submit()" ><p><%=item.name %></p>  <!-- NEW: added .name to access the name property inside the object/document AND added onChange="this.form.submit()" to submit the form right away when the box is checked -->
+                        </div>
+                    </label>
+                </form>
+            <% }); %>
+
+            <form action=<%=route %> method="post">                             <!-- Post to the current page so that the data is added to the correct array -->
+                <input type="text" name="newItem" placeholder="New item" autofocus>
+                <button type="submit" name="route" value=<%=route %>>+</button> <!-- route is sent with the form data here for debugging. The target of the action= gives the correct app.post() call which sends the data to the correct array -->
+            </form>
+    </div>
+
+<!-- copy paste of code from footer.ejs - can be applied to ALL pages accross a website -->
+<%- include('footer.ejs') -%>
